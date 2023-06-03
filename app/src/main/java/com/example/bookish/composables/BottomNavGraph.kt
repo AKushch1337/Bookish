@@ -5,6 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.bookish.BottomBarScreen
+import com.example.bookish.composables.screens.LibraryScreen
+import com.example.bookish.composables.screens.ListsScreen
+import com.example.bookish.composables.screens.SettingsScreen
 
 @Composable
 fun BottomNavGraph(navController: NavHostController) {

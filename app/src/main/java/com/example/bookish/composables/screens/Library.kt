@@ -1,4 +1,4 @@
-package com.example.bookish.composables
+package com.example.bookish.composables.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

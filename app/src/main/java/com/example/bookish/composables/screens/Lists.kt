@@ -1,4 +1,4 @@
-package com.example.bookish.composables
+package com.example.bookish.composables.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -14,15 +14,15 @@ import androidx.compose.ui.unit.sp
 import com.example.bookish.R
 
 @Composable
-fun SettingsScreen() {
+fun ListsScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black),
+            .background(Color.Red),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = stringResource(R.string.settings),
+            text = stringResource(R.string.lists),
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White

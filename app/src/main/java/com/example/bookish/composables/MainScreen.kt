@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
@@ -47,9 +48,10 @@ fun RowScope.AddItem(
     currentDestination: NavDestination?,
     navController: NavHostController
 ) {
+    val localizedTitle = stringResource(id = screen.title)
     BottomNavigationItem(
         label = {
-            Text(text = screen.title)
+            Text(text = localizedTitle)
         },
         icon = {
             Icon(imageVector = screen.icon, contentDescription = "NavigationIcon")

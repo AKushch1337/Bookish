@@ -8,22 +8,22 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class BottomBarScreen(
     val route: String,
-    val title: String,
+    val title: Int,
     val icon: ImageVector
 ) {
     object Library : BottomBarScreen(
         route = "library",
-        title = R.string.library.toString(),
+        title = R.string.library,
         icon = Icons.Default.Home
     )
     object Lists : BottomBarScreen(
         route = "lists",
-        title = R.string.lists.toString(),
+        title = R.string.lists,
         icon = Icons.Default.List
     )
     object Settings : BottomBarScreen(
         route = "settings",
-        title = R.string.settings.toString(),
+        title = R.string.settings,
         icon = Icons.Default.Settings
     )
 }

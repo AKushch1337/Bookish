@@ -14,6 +14,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.bookish.BottomBarScreen
+import com.example.bookish.R
 
 @Composable
 fun MainScreen() {
@@ -57,7 +58,7 @@ fun RowScope.AddItem(
             Text(text = localizedTitle)
         },
         icon = {
-            Icon(imageVector = screen.icon, contentDescription = "NavigationIcon")
+            Icon(imageVector = screen.icon, contentDescription = stringResource(R.string.nav_icon))
         },
         selected = currentDestination?.hierarchy?.any {
             it.route == screen.route

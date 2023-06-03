@@ -13,17 +13,17 @@ sealed class BottomBarScreen(
 ) {
     object Library : BottomBarScreen(
         route = "library",
-        title = "Library",
+        title = R.string.library.toString(),
         icon = Icons.Default.Home
     )
     object Lists : BottomBarScreen(
         route = "lists",
-        title = "Lists",
+        title = R.string.lists.toString(),
         icon = Icons.Default.List
     )
     object Settings : BottomBarScreen(
         route = "settings",
-        title = "Setting",
+        title = R.string.settings.toString(),
         icon = Icons.Default.Settings
     )
 }

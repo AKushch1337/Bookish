@@ -1,3 +1,5 @@
+package com.example.bookish.composables.screens
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -27,10 +29,10 @@ fun SettingsScreen() {
                 modifier = Modifier.padding(bottom = 8.dp)
             )
             DropDownSetting("Font Size", listOf("Small", "Medium", "Large"))
-            SwitchSetting("Theme", true)
+            // SwitchSetting("Theme", true)
             DropDownSetting("Margin Size", listOf("Small", "Medium", "Large"))
 
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(8.dp))
 
             Text(
                 text = "Reading Preferences",

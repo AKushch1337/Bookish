@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,7 +22,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 
 @Composable
-fun ItemBookList() {
+fun LibraryItem() {
     Card(
         modifier = Modifier
             .background(Color.White)
@@ -53,6 +52,6 @@ fun ItemBookList() {
 
 @Preview
 @Composable
-fun ItemBookListPreview() {
-    ItemBookList()
+fun LibraryItemPreview() {
+    LibraryItem()
 }

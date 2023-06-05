@@ -12,6 +12,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.bookish.composables.components.LibraryItem
@@ -21,6 +23,7 @@ fun LibraryScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
+            .semantics { testTag = "library_tag" }
             .background(Color.White),
     ) {
         Column(modifier = Modifier

@@ -17,9 +17,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
+import com.example.bookish.R
 
 @Composable
 fun LibraryItem() {
@@ -42,9 +44,12 @@ fun LibraryItem() {
             )
             Spacer(modifier = Modifier.width(16.dp))
             Column {
-                Text(text = "Book Name", color = Color.Black)
+                Text(
+                    text = stringResource(R.string.book_name),
+                    color = Color.Black,
+                )
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = "Author", color = Color.Black)
+                Text(text = stringResource(R.string.author), color = Color.Black)
             }
         }
     }

@@ -13,6 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.bookish.R
@@ -40,7 +42,7 @@ fun SettingsScreen() {
             Text(
                 text = stringResource(R.string.read_preferences),
                 style = MaterialTheme.typography.h5,
-                modifier = Modifier.padding(bottom = 8.dp)
+                modifier = Modifier.padding(bottom = 8.dp).semantics { testTag = "settings_tag" }
             )
             // SwitchSetting(stringResource(R.string.auto_night_mode), true)
             DropDownSetting(stringResource(R.string.highlight), stringArrayResource(R.array.dropdown_options2))

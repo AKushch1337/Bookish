@@ -21,6 +21,7 @@ import com.example.bookish.R
 
 @Composable
 fun SettingsScreen() {
+    val testSettingsTag = stringResource(R.string.settings_tag)
     Surface(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
@@ -42,7 +43,9 @@ fun SettingsScreen() {
             Text(
                 text = stringResource(R.string.read_preferences),
                 style = MaterialTheme.typography.h5,
-                modifier = Modifier.padding(bottom = 8.dp).semantics { testTag = "settings_tag" }
+                modifier = Modifier
+                    .padding(bottom = 8.dp)
+                    .semantics { testTag = testSettingsTag }
             )
             // SwitchSetting(stringResource(R.string.auto_night_mode), true)
             DropDownSetting(stringResource(R.string.highlight), stringArrayResource(R.array.dropdown_options2))

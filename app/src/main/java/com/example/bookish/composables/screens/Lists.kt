@@ -17,6 +17,7 @@ import com.example.bookish.R
 
 @Composable
 fun ListsScreen() {
+    val testListTag = stringResource(R.string.lists_tag)
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -28,7 +29,7 @@ fun ListsScreen() {
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
-            modifier = Modifier.semantics { testTag = "lists_tag"  }
+            modifier = Modifier.semantics { testTag = testListTag  }
         )
     }
 }

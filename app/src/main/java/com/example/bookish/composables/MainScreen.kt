@@ -64,7 +64,9 @@ fun RowScope.AddItem(
             it.route == screen.route
         } == true,
         onClick = {
-            navController.navigate(screen.route)
+            navController.navigate(screen.route) {
+                launchSingleTop = true
+            }
         }
     )
 }

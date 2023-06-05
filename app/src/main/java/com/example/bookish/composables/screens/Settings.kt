@@ -11,37 +11,40 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.bookish.R
 
 @Composable
 fun SettingsScreen() {
     Surface(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                text = "Settings",
+                text = stringResource(R.string.settings),
                 style = MaterialTheme.typography.h4,
                 modifier = Modifier.padding(bottom = 16.dp)
             )
             Text(
-                text = "Display Settings",
-                style = MaterialTheme.typography.subtitle1,
+                text = stringResource(R.string.display_settings),
+                style = MaterialTheme.typography.h5,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
-            DropDownSetting("Font Size", listOf("Small", "Medium", "Large"))
-            // SwitchSetting("Theme", true)
-            DropDownSetting("Margin Size", listOf("Small", "Medium", "Large"))
+            DropDownSetting(stringResource(R.string.font_size), stringArrayResource(R.array.dropdown_options1))
+            // SwitchSetting(stringResources(R.id.theme), true)
+            DropDownSetting(stringResource(R.string.margin_size), stringArrayResource(R.array.dropdown_options1))
 
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "Reading Preferences",
-                style = MaterialTheme.typography.subtitle1,
+                text = stringResource(R.string.read_preferences),
+                style = MaterialTheme.typography.h5,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
-            SwitchSetting("Auto Night Mode", true)
-            DropDownSetting("Highlight Color", listOf("Yellow", "Green", "Blue"))
-            DropDownSetting("Reading Progress", listOf("Page Number", "Percentage"))
+            // SwitchSetting(stringResource(R.string.auto_night_mode), true)
+            DropDownSetting(stringResource(R.string.highlight), stringArrayResource(R.array.dropdown_options2))
+            DropDownSetting(stringResource(R.string.read_progress), stringArrayResource(R.array.dropdown_options3))
 
             Spacer(modifier = Modifier.weight(1f))
 
@@ -49,14 +52,14 @@ fun SettingsScreen() {
                 onClick = { /* Save settings logic */ },
                 modifier = Modifier.align(Alignment.End)
             ) {
-                Text(text = "Save")
+                Text(text = stringResource(R.string.save))
             }
         }
     }
 }
 
 @Composable
-fun DropDownSetting(name: String, options: List<String>) {
+fun DropDownSetting(name: String, options: Array<String>) {
     var expanded by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf(0) }
 
@@ -76,7 +79,7 @@ fun DropDownSetting(name: String, options: List<String>) {
                 Text(text = options[selectedIndex])
                 Icon(
                     imageVector = Icons.Default.ArrowDropDown,
-                    contentDescription = "Expand",
+                    contentDescription = stringResource(R.string.expand),
                     modifier = Modifier.padding(start = 4.dp)
                 )
             }

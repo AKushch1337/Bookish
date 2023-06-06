@@ -34,4 +34,7 @@
         <item>Page Number</item>
         <item>Percentage</item>
     </string-array>
+    <string name="lists_favorite">Favorite</string>
+    <string name="lists_to_read">To Read</string>
+    <string name="lists_finished">Finished</string>
 </resources>

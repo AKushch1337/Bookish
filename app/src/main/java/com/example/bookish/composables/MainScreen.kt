@@ -15,6 +15,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.bookish.BottomBarScreen
 import com.example.bookish.R
+import com.example.bookish.composables.graphs.BottomNavGraph
 
 @Composable
 fun MainScreen() {
@@ -32,16 +33,20 @@ fun MainScreen() {
 @Composable
 fun BottomBar(navController: NavHostController) {
     val screens = listOf(
-            BottomBarScreen.Library,
-            BottomBarScreen.Lists,
-            BottomBarScreen.Settings
+        BottomBarScreen.Library,
+        BottomBarScreen.Lists,
+        BottomBarScreen.Settings
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
 
     BottomNavigation {
         screens.forEach { screen ->
-            AddItem(screen = screen, currentDestination = currentDestination, navController = navController)
+            AddItem(
+                screen = screen,
+                currentDestination = currentDestination,
+                navController = navController
+            )
         }
     }
 }
@@ -50,7 +55,7 @@ fun BottomBar(navController: NavHostController) {
 fun RowScope.AddItem(
     screen: BottomBarScreen,
     currentDestination: NavDestination?,
-    navController: NavHostController
+    navController: NavHostController,
 ) {
     val localizedTitle = stringResource(id = screen.title)
     BottomNavigationItem(

@@ -1,4 +1,4 @@
-package com.example.bookish.composables
+package com.example.bookish.composables.graphs
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -11,7 +11,10 @@ import com.example.bookish.composables.screens.SettingsScreen
 
 @Composable
 fun BottomNavGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = BottomBarScreen.Library.route)
+    NavHost(
+        navController = navController,
+        startDestination = BottomBarScreen.Library.route
+    )
     {
         composable(route = BottomBarScreen.Library.route) {
             LibraryScreen()

@@ -4,6 +4,8 @@
 > View the code [_here_](https://github.com/AKushch1337/Bookish/tree/master/app/src).
 > 
 > View the design doc [_here_](https://docs.google.com/document/d/1qnaJQZAas_YInUklZ8cCjC-hOtiTIzA8HYjtcKa0vN8/edit#)
+> 
+> View the UI test file [_here_](https://github.com/AKushch1337/Bookish/blob/master/app/src/androidTest/java/com/example/bookish/UITest.kt)
 -------------------------------
 ## General Information
 - The application is a book reader. 

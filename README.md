@@ -47,6 +47,16 @@
 
 - Or run it using Android Studio
 
+## Run instrumented tests(UI tests):
+
+- Run an AVD(Android Virtual Device) or connect your own device to the computer
+
+- In project folder run the following command
+```gradle
+./gradlew connectedAndroidTest 
+```
+- See the magic happen
+
 
 <!-- ## Screenshots
 ![Game screenshot](app/src/main/res/drawable/example1.png)

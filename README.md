@@ -29,11 +29,17 @@
       - Compose UI testing tools
       - Espresso
 
-## Build the project yourself
+## Build & Run the project yourself
 
 - Clone the project
+```
+git clone https://github.com/AKushch1337/Bookish
+```
 
 - Move into the project directory
+```
+cd /path/to/project
+```
 
 - Build the project using Gradle Wrapper
  ```gradle
@@ -41,11 +47,7 @@
 ``` 
 - Or build it using Android Studio(that way you will run the app also!)
 
-## Run the project(easier way)
-
-- Download the APK from release page(can't right now)
-
-- Or run it using Android Studio
+- Easiest way: just download the APK from the release page(will be available later)
 
 ## Run instrumented tests(UI tests):
 
@@ -58,13 +60,10 @@
 - See the magic happen
 
 
-<!-- ## Screenshots
-![Game screenshot](app/src/main/res/drawable/example1.png)
-![Game screenshot](app/src/main/res/drawable/example2.png)
-
-![Game screenshot](app/src/main/res/drawable/example3.png)
-![Game screenshot](app/src/main/res/drawable/example4.png)
--->
+## Screenshots of the app(for now)
+![image](https://github.com/AKushch1337/Bookish/assets/89732075/0d80fdbc-a4dd-460c-b17e-aa582a91ef56)
+![image](https://github.com/AKushch1337/Bookish/assets/89732075/3e5a4bd4-d6d3-4dd0-9da7-8b617eaa363a)
+![image](https://github.com/AKushch1337/Bookish/assets/89732075/ab775124-94e8-484c-a887-7b1baf75f5a6)
 
 ## Project Status
 Project is: _in early development_

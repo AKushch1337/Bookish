@@ -2,9 +2,9 @@ name: Android Instrumented tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 jobs:
   connected-tests:
     runs-on: macos-latest

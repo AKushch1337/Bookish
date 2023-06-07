@@ -1,6 +1,5 @@
 package com.example.bookish.composables.screens
 
-import DocumentPicker
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -11,6 +10,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import com.example.bookish.R
+import com.example.bookish.composables.pdfview.DocumentPicker
 
 @Composable
 fun LibraryScreen() {

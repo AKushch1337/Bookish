@@ -1,3 +1,5 @@
+package com.example.bookish.composables.pdfview
+
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -15,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import com.example.bookish.composables.pdfview.PDFView
 import com.rizzi.bouquet.ResourceType
 import com.rizzi.bouquet.rememberVerticalPdfReaderState
 

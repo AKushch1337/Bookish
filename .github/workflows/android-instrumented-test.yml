@@ -1,12 +1,10 @@
-name: Android CI
+name: Android Instrumented tests
 
 on:
   push:
-    branches: 
-      - "**"
+    branches: [ "main" ]
   pull_request:
-    branches: 
-      - "**"
+    branches: [ "main" ]
 jobs:
   connected-tests:
     runs-on: macos-latest

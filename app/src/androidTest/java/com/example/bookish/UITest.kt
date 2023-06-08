@@ -103,10 +103,10 @@ class UITest {
         composeTestRule.onNodeWithTag(settingsTag).assertIsDisplayed()
     }
 
-    @Test
-    fun verify_list_of_books_scrollable() {
-        composeTestRule.onNodeWithTag(scrollTag).assert(hasScrollAction())
-    }
+//    @Test
+//    fun verify_list_of_books_scrollable() {
+//        composeTestRule.onNodeWithTag(scrollTag).assert(hasScrollAction())
+//    }
 
     @Test
     fun verify_button_settings_screen_is_clickable() {

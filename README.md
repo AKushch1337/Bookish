@@ -49,7 +49,7 @@ cd /path/to/project
 ``` 
 - Or build it using Android Studio(that way you will run the app also!)
 
-- Easiest way: just download the APK from the release page(will be available later)
+- Easiest way: just [download](https://github.com/AKushch1337/Bookish/releases/download/v0.1.0-alpha/Bookish.apk) the APK from the release page
 
 ## Run instrumented tests(UI tests):
 

@@ -63,9 +63,10 @@ cd /path/to/project
 
 
 ## Screenshots of the app(for now)
-![image](https://github.com/AKushch1337/Bookish/assets/89732075/0d80fdbc-a4dd-460c-b17e-aa582a91ef56)
-![image](https://github.com/AKushch1337/Bookish/assets/89732075/3e5a4bd4-d6d3-4dd0-9da7-8b617eaa363a)
-![image](https://github.com/AKushch1337/Bookish/assets/89732075/ab775124-94e8-484c-a887-7b1baf75f5a6)
+<img src="https://github.com/AKushch1337/Bookish/assets/89732075/54c4bca6-e7bf-47e7-b684-126195c0d46f" alt= “” width="40%" height="40%">
+<img src="https://github.com/AKushch1337/Bookish/assets/89732075/ddded284-6042-403c-be9a-862348abc5fa" alt= “” width="40%" height="40%">
+<img src="https://github.com/AKushch1337/Bookish/assets/89732075/79377131-293e-467b-b384-c082bf5b96bd" alt= “” width="40%" height="40%">
+<img src="https://github.com/AKushch1337/Bookish/assets/89732075/bd7e5aac-7f98-46cc-a82e-a6a4770d8e8f" alt= “” width="40%" height="40%">
 
 ## Project Status
 Project is: _in early development_
